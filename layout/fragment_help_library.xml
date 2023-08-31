@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 좌석 상태"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/my_seat_color"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="내 좌석"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seat_using_color"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용 중"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/can_use_seat_color"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="사용 가능"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/seat_return_delay_color"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="10dp"/>
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="반납 지연"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/tv_locker_help1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 기타"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_locker_help2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1) 열람실 이용시 좌석 배정 후 30분 이내로 QR 코드 미인증시 자동으로 반납 처리됩니다."
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_locker_help3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2) 연장은 1회당 2시간 제공됩니다."
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3) 반납 지연시 30분 후 자동으로 반납 처리됩니다."
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+</LinearLayout>

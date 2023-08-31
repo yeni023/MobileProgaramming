@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_locker_extend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="대여 연장" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="성결관 - B1 - 8"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#F1C40F"
+        android:text="8"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/locker_icon" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="20210840 박예은"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="#EDEDED"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="한 학기 사물함 사용을"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="연장하시겠습니까?"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#BEBEBE"
+                android:text="Cancel" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3498DB"
+                android:text="OK" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="반납이 3일 남았습니다"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="2023-06-12"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/btnHelp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/btn_help" />
+
+
+</LinearLayout>

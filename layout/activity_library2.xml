@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_library2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="열람실/스터디룸"/>
+
+    <Button
+        android:id="@+id/btnGeneral"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:text="열람실 예약하기"
+        android:textSize="28sp"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="90dp"/>
+
+    <Button
+        android:id="@+id/btnGroup"
+        android:layout_width="240dp"
+        android:layout_height="150dp"
+        android:textSize="28sp"
+        android:text="그룹 스터디룸 예약하기"
+        android:layout_marginLeft="90dp"/>
+</LinearLayout>

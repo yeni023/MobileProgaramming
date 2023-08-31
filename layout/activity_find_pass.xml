@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_find_pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="ID / PW 찾기"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="아이디 / 비밀번호 찾기"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="인증된 정보로만 정보 찾기가 가능합니다 :)"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"/>
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider"
+        android:layout_marginBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rgroup_pass"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="40dp">
+
+            <RadioButton
+                android:id="@+id/rbtnID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="아이디 찾기"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"/>
+
+            <RadioButton
+                android:id="@+id/rbtnPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="비밀번호 찾기"
+                android:textSize="20sp"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ex) yeeun3011"
+        android:background="@drawable/register_background"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="휴대폰번호"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/editTextTextPersonName10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ex) 01012345678"
+        android:background="@drawable/register_background"
+        android:inputType="number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="60dp"/>
+
+    <Button
+        android:id="@+id/btn_find_ok"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="확인"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_find_cancel"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:text="취소"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

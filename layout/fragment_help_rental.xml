@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="1) 본인이 소속한 학과의 물품만 대여 가능"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2) 물품 반납 기한"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 우산 : 3일 이내 반납"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 그외 물품 : 당일 이내 반납"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3) 연체 시 패널티"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 1주일 미만 연체 : 1회 패널티 / 한달 간 대여 불가"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 1주일 이상 연체 : 2회 패널티 / 한달 간 대여 불가"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 패널티 3회 이상 누적 : 일년 간 물품 대여 불가"
+            android:textColor="#FF0000"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4) 패널티 횟수 리셋은 일년 단위입니다"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 리셋 일시 : 매년 1월 1일"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="5) 분실 및 파손 시 책임은 사용자 본인에게 있습니다"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="* 물품의 100% 가격 보상 청구"
+            android:textColor="#FF0000"
+            android:textSize="18sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_restaurant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="식당 예약"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+
+        <ImageButton
+            android:id="@+id/btnhonbab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:backgroundTint="#F3E2A9"
+            android:src="@drawable/honbab" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <ImageButton
+            android:id="@+id/btngeneralbab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:backgroundTint="#F3E2A9"
+            android:src="@drawable/generalbab" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnCheckBook"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:text="나의 예약 정보 확인"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnExtend"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:text="식사 시간 연장하기"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="230dp"
+            android:layout_height="60dp"
+            android:text="퇴장 하기"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/btnHelp_restaurant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/btn_help" />
+</LinearLayout>

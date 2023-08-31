@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_restaurant_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="도움말"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="15dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 좌석 상태"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. 내 예약 정보를 확인하고 싶다면"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/restaurant_info_img"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2. 소요 시간 종료 5분 후 자동 퇴장처리됩니다"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="시간 연장을 원한다면?"
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"/>
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/restaurant_extend_img"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3. 음식을 다 먹은 후 시간이 많이 남았다면"
+            android:textColor="#ff0000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/restaurant_exit_img"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/tv_locker_help1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="# 기타"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_locker_help2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1) 연장은 1회당 20분 제공됩니다"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_locker_help3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2) 좌석은 시간 종료 5분 후 자동으로 반납 처리됩니다"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="3) 소요 시간 선택 범위는 최대 60분 입니다"
+            android:textSize="18sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="4) 일반존 인원 선택 범위는 2인~4인 입니다"
+            android:textSize="18sp"/>
+    </LinearLayout>
+</LinearLayout>

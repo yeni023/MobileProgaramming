@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:title="회원가입"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="이름"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="홍길동"
+                android:background="@drawable/register_background"
+                android:inputType="textPersonName"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="학번"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_background"
+                android:inputType="number"
+                android:layout_marginBottom="20dp"
+                android:hint="20210840"/>
+
+            <TextView
+                android:id="@+id/textView33"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="학과"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:background="@drawable/register_background"
+                android:hint="컴퓨터공학과"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/textView35"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="아이디"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName3"
+                    android:layout_width="230dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/register_background"
+                    android:hint="영문, 숫자 조합 5글자 이상" />
+
+                <Button
+                    android:id="@+id/btnDoubChk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#782980B9"
+                    android:text="중복확인"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="비밀번호"
+                android:textSize="25sp"/>
+
+            <EditText
+                android:id="@+id/edtpass1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/register_background"
+                android:inputType="textPassword"
+                android:hint="영문, 숫자, 특수기호 조합 8글자 이상"
+                android:layout_marginBottom="20dp"/>
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="비밀번호 확인"
+                android:textSize="25sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtpass2"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/register_background"
+                    android:hint="비밀번호를 동일하게 입력하세요"
+                    android:inputType="textPassword" />
+
+                <Button
+                    android:id="@+id/btnpassChk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#782980B9"
+                    android:text="비밀번호 확인"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="핸드폰번호 등록"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="@drawable/register_background"
+                    android:hint="핸드폰번호 입력" />
+
+                <Button
+                    android:id="@+id/btnNumSend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#782980B9"
+                    android:text="인증번호 발송"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="20dp">
+
+                <EditText
+                    android:id="@+id/editTextTextPersonName8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:background="@drawable/register_background"
+                    android:hint="인증번호 입력" />
+
+                <Button
+                    android:id="@+id/btnNumChk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#782980B9"
+                    android:text="인증번호 확인"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="?android:attr/listDivider"
+                android:layout_marginBottom="20dp"/>
+
+            <CheckBox
+                android:id="@+id/chk1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="서비스 이용약관 (필수)"
+                android:textSize="25sp"/>
+
+            <CheckBox
+                android:id="@+id/chk2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="개인정보 처리 방침 (필수)"
+                android:textSize="25sp"
+                android:layout_marginBottom="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="40dp">
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="개인정보 수집"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="보유기간 : 회원탈퇴 즉시 또는 이용 목적 달성 즉시 파기"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#782980B9"
+                android:text="가입하기"
+                android:textSize="20sp"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
