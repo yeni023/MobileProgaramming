@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/itmlocker"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/bottom_locker"
+        android:title="사물함"/>
+
+    <item
+        android:id="@+id/itmlibrary"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/bottom_library"
+        android:title="열람실"/>
+
+    <item
+        android:id="@+id/itmrestaurant"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/bottom_restaurant"
+        android:title="식당"/>
+
+    <item
+        android:id="@+id/itmrental"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:icon="@drawable/bottom_rental"
+        android:title="물품"/>
+</menu>

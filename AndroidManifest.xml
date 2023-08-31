@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/school_main"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.School"
+        tools:targetApi="31">
+        <activity
+            android:name=".LoginActivity"
+            android:label="대여모두돼요"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:label="대여모두돼여"/>
+        <activity android:name=".RegisterActivity" android:label="회원가입" android:parentActivityName=".LoginActivity"/>
+        <activity android:name=".FindPassActivity" android:label="비밀번호 찾기" android:parentActivityName=".LoginActivity"/>
+        <activity android:name=".FindIdActivity" android:label="아이디 찾기" android:parentActivityName=".LoginActivity"/>
+        <activity android:name=".BookRestaurantActivity1" android:label="식당 예약 이용 안내서" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".BookRestaurantActivity2" android:label="식당 예약 첫 화면" android:parentActivityName=".BookRestaurantActivity1"/>
+        <activity android:name=".HonbabActivity" android:label="혼밥존 예약" android:parentActivityName=".BookRestaurantActivity2"/>
+        <activity android:name=".GeneralBabActivity" android:label="일반존 예약" android:parentActivityName=".BookRestaurantActivity2"/>
+        <activity android:name=".RestaurantHelpActivity1" android:label="식당 예약 도움말" android:parentActivityName=".BookRestaurantActivity2"/>
+        <activity android:name=".RestaurantHelpActivity2" android:label="식당 예약 도움말" android:parentActivityName=".HonbabActivity"/>
+        <activity android:name=".RestaurantHelpActivity3" android:label="식당 예약 도움말" android:parentActivityName=".GeneralBabActivity"/>
+        <activity android:name=".LockerActivity1" android:label="사물함 대여 이용 안내서" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LockerStateActivity" android:label="사물함 대여 첫 화면" android:parentActivityName=".LockerActivity1"/>
+        <activity android:name=".LockerHelpActivity" android:label="사물함 대여 도움말" android:parentActivityName=".LockerStateActivity"/>
+        <activity android:name=".LockerActivity2" android:label="사물함 마이페이지" android:parentActivityName=".LockerStateActivity"/>
+        <activity android:name=".LockerHelpActivity2" android:label="사물함 대여 도움말" android:parentActivityName=".LockerActivity2"/>
+        <activity android:name=".LockerExtendActivity" android:label="사물함 대여 연장" android:parentActivityName=".LockerActivity2"/>
+        <activity android:name=".LockerHelpActivity3" android:label="사물함 대여 도움말" android:parentActivityName=".LockerExtendActivity"/>
+        <activity android:name=".RentalActivity1" android:label="물품 대여 이용 안내서" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LibraryActivity1" android:label="열람실 예약 이용 안내서" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".LibraryActivity2" android:label="열람실 예약" android:parentActivityName=".LibraryActivity1"/>
+        <activity android:name=".MypageActivity" android:label="마이페이지" android:parentActivityName=".HelpActivity"/>
+        <activity android:name=".VersionInfoActivity" android:label="버전정보" android:parentActivityName=".HelpActivity"/>
+        <activity android:name=".HelpActivity" android:label="도움말" android:parentActivityName=".HelpActivity"/>
+        <activity android:name=".LogoutActivity" android:label="로그아웃" android:parentActivityName=".HelpActivity"/>
+    </application>
+
+</manifest>
